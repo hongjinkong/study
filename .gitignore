@@ -1,0 +1,57 @@
+# ===== 프로그램 설치본 (학습 코드가 아님 · 용량 큼 · 100MB 초과 파일 포함) =====
+sqldeveloper/
+
+# ===== 대용량 데이터셋 / 이미지 학습 데이터 =====
+deep learning/data/
+실데이터분석/도메인 챌린지별 제공 데이터/
+실데이터분석/data/
+텍스트마이닝/data/
+
+# ===== 모델 가중치 / 직렬화 객체 =====
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.pkl
+*.joblib
+*.pb
+*.onnx
+*.model
+
+# ===== 압축 파일 =====
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.7z
+*.rar
+
+# ===== 바이너리 / 실행 파일 / 라이브러리 =====
+*.jar
+*.dll
+*.dylib
+*.so
+*.exe
+*.bin
+*.class
+
+# ===== 파이썬 / 주피터 =====
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# ===== 에디터 / 도구 설정 =====
+.vscode/
+.idea/
+.continue/
+.claude/
+.DS_Store
+Thumbs.db
+
+# ===== 임시(중첩 git 백업) — 확인 후 삭제하세요 =====
+_to_delete/

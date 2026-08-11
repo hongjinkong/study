@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // js : 웹페이지에서 동적인 기능을 제어하는 언어
+        // js 로 할수있는 출력문, 입력문
+        // 출력문 2가지 -1) 사용자에게 메세지를 전달하는 출력문 2) 개발자용 출력문
+        //alert("우클릭을 방지했습니다.")
+        //alert - 사용자의 상태가 변화햇거나, 사용자에게 금지 알림 줄 때 활용
+        console.log("굿모닝 여러분 정보처리기사 홍진성입니두~")
+
+        // 입력문 2가지
+        // 1) 사용자에게 입력창을 제공하는 기법 2) 사용자에게 확인 , 취소 입력받는 기법
+        //prompt("생년월일 입력하세요","6글자를 입력");
+        let check = confirm("정말 탈퇴하시겠습니까")
+        console.log(check);
+        
+        // 값을 지정한는 변수 지정
+        let select = "값";
+        const money = 0;
+
+        // 배열 vs 객체
+        // 배열 : 같은 의미를 가진 데이터를 묶어서 관리하는 타입
+        // 배열의 접근법 : 배열이름[인덱스] -> 몇번째라는 순서만 알 수 있다.
+        // 객체 : 다른 의미를 가진 데이터를 묶어서 관리하는 타입
+        // 객체의 접근법 : 객체이름.속성명 -> 속성명이라는 이름으로 알 수 있다.
+        let num = [1,2,3,4,5,6,7,8,9,10];
+        num[0];
+        // 배열의 길이를 구하는 방법
+        // 활용처 : 1) 반복의 범위를 설정할 때 할용. 2) 데이터의 유무 검증
+        num.length;
+
+        let obj = {
+            name : "홍진성",
+            age : 20,
+            gender : "남자",
+        }
+        obj.name;
+    </script>
+</body>
+</html>

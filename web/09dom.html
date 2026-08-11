@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "h1text">안녕하세요 비가 존나 오네요</h1>
+    <span class = "spantext">저는 클래스입니다.</span>
+    <span class = "spantext">저는 클래스입니다.</span>
+    <p id = "ptext">버튼을 클릭하면 변경해주세요</p>
+    <button id = "btn">p태그 변경</button>
+    <script>
+        /*
+            DOM 이란?
+              - 내가 보고있는 html 문서를 태그, 속성, 컨텐츠 각각 쪼개서 저장한다.
+              - Why? 쪼개져있는 각각의 태그, 속성, 컨텐츠를 접근하기 위해서
+            * document = 내가 보고있는 html의 모든 정보를 담고 있는 객체
+            * element = 요소를 접근한다 -> 태그 + 컨텐츠 + 속성  
+
+            이벤트 연결 방법
+              - 연결할 대상을 찾아온다 -> addEventListener("이벤트 종류", 실행할 함수)
+              - 포인트 : 함수를 오직 하나의 태그에게만 부여할때는 익명함수 기법을 활용
+        */
+
+        // 미션 1) id가 h1text인 요소를 요청
+        // 한글대화) 지금 보고있는 html에서 id가 h1text인 요소를 가져와줘
+        let h1 = document.getElementById("h1text");
+        console.log(h1);
+        //미션 2) class가 spantext인 요소를 요청
+        let span = document.getElementsByClassName("spantext");
+        console.log(span);
+        //미션 3) id가 h1text인 요소를 가져와서 안에 있는 글자를 변경
+        let text = document.getElementById("h1text").innerHTML;
+        console.log(text);
+        //미션 4) 미션3에서 가져온 내용을 변경
+        document.getElementById("h1text").innerHTML = "변경했습니다."
+        //미션 5) 미션4에서 변경한 태그에게 글자색을 빨간색으로 변경
+        document.getElementById("h1text").style.color = "red";
+        //미션 6) id가 btn 인 요소를 클릭하면, p태그의 글자를 변경, 색깔을 파란색으로 변경
+        
+        document.getElementById("btn").addEventListener("click",() => {
+            let p = document.getElementById("ptext");
+            p.innerText = "버튼으로 변경완료";
+            p.style.color = "blue";
+        });
+    </script>
+</body>
+</html>

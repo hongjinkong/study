@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>게시판</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>자유 게시판</h1>
+    </header>
+
+    <!-- 목록 화면 -->
+    <section id="list-view" class="view">
+      <div class="toolbar">
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="제목으로 검색" />
+          <button id="search-btn" class="btn btn-outline">검색</button>
+        </div>
+        <button id="write-open-btn" class="btn btn-primary">글쓰기</button>
+      </div>
+
+      <div class="table-wrap">
+        <table class="board-table">
+          <thead>
+            <tr>
+              <th class="col-no">번호</th>
+              <th class="col-title">제목</th>
+              <th class="col-author">작성자</th>
+              <th class="col-date">작성일</th>
+            </tr>
+          </thead>
+          <tbody id="list-body">
+            <!-- JS로 렌더링 -->
+          </tbody>
+        </table>
+      </div>
+
+      <p id="empty-msg" class="empty-msg">등록된 게시글이 없습니다.</p>
+    </section>
+
+    <!-- 글쓰기 화면 -->
+    <section id="write-view" class="view hidden">
+      <h2>글쓰기</h2>
+      <form id="write-form" class="form">
+        <div class="form-row">
+          <label for="input-title">제목</label>
+          <input type="text" id="input-title" placeholder="제목을 입력하세요" />
+        </div>
+        <div class="form-row">
+          <label for="input-author">작성자</label>
+          <input type="text" id="input-author" placeholder="작성자를 입력하세요" />
+        </div>
+        <div class="form-row">
+          <label for="input-content">내용</label>
+          <textarea id="input-content" rows="8" placeholder="내용을 입력하세요"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="button" id="write-cancel-btn" class="btn btn-outline">취소</button>
+          <button type="submit" id="write-submit-btn" class="btn btn-primary">등록</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- 상세보기 화면 -->
+    <section id="detail-view" class="view hidden">
+      <div class="detail-header">
+        <h2 id="detail-title"></h2>
+        <div class="detail-meta">
+          <span id="detail-author"></span>
+          <span id="detail-date"></span>
+        </div>
+      </div>
+      <div class="detail-content" id="detail-content"></div>
+      <div class="form-actions">
+        <button id="detail-list-btn" class="btn btn-outline">목록으로</button>
+        <button id="detail-delete-btn" class="btn btn-danger">삭제</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

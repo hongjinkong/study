@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            선택자 : 스타일을 부여하고싶은 대상을 지칭하는 방법
+            * 선택자는 우선순위가 존재 -> 범위가 좁을수로 우선순위가 높다
+            * 전체 < 태그 < 클래스 < 아이디 
+            1) 전체 선택자 : *
+            2) 태그 선택자 : tag
+            3) 클래스선택자(.) : 하나의 클래스로 여러개의 태그에게 스타일을 부여\
+            4) 아이디어선택자(#) : 하나의 아이디어로 여러개의 태그에게 스타일을 부여
+            5) 계층선택자, 자식선택자(>) : 태그의 포함관계를 활용해서 특정 태그를 지정할때 사용
+            포인트 : 아이디는 디자인 영역에서 레이아웃을 구성 할때 활용, 클래스가 세세한 스타일 관리.
+            6) nth-child(숫자) : 자식들중 몇번째 자식을 지칭할때 활용
+        */
+        *{
+            color : red;
+        }
+        span{
+            color : green;
+        }
+        .text{
+            color : blue;
+        }
+        #second{
+            color : yellow;
+        }
+        #first > td{
+            color : purple;
+        }
+    </style>
+</head>
+<body>
+    <span>첫번째 줄입니다.<span>
+    <span class="text" id="second">두번째 줄입니다.</span>
+    <span class="text">세번째 줄입니다.</span>
+    <p class="text">첫번째 문단입니다.</p>
+    <h1>제목입니다.</h1> 
+    <table>
+        <tr id="first">
+            <td>홍진성</td>
+            <td>남자</td>
+        </tr>    
+        <tr id="second">
+            <td>황서현</td>
+            <td>여자</td>
+        </tr>
+    </table>
+</body>
+</html>  

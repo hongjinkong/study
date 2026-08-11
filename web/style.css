@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background-color: #f4f5f7;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0 30px;
+}
+
+.header h1 {
+  font-size: 26px;
+  color: #2b3a55;
+}
+
+.view {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.hidden {
+  display: none;
+}
+
+/* 툴바 */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* 버튼 */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: #3b5bfd;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #2c47d6;
+}
+
+.btn-outline {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn-outline:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* 테이블 */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.board-table th,
+.board-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 14px;
+}
+
+.board-table th {
+  color: #555;
+  border-bottom: 2px solid #ddd;
+  font-weight: 600;
+}
+
+.board-table tbody tr {
+  cursor: pointer;
+}
+
+.board-table tbody tr:hover {
+  background-color: #f7f8fb;
+}
+
+.col-no {
+  width: 60px;
+  text-align: center;
+}
+
+.col-author {
+  width: 120px;
+}
+
+.col-date {
+  width: 120px;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #999;
+  padding: 30px 0;
+  display: none;
+}
+
+/* 글쓰기 폼 */
+.form-row {
+  margin-bottom: 14px;
+}
+
+.form-row label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* 상세보기 */
+.detail-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+}
+
+.detail-header h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: #888;
+}
+
+.detail-content {
+  min-height: 150px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* 반응형 - 태블릿 이하 */
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .view {
+    padding: 14px;
+    border-radius: 8px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  #write-open-btn {
+    width: 100%;
+  }
+
+  /* 목록 테이블을 카드형으로 전환 */
+  .board-table thead {
+    display: none;
+  }
+
+  .board-table,
+  .board-table tbody,
+  .board-table tr,
+  .board-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .board-table tr {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .board-table td {
+    border-bottom: none;
+    padding: 4px 2px;
+    font-size: 13px;
+  }
+
+  .board-table td.col-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}

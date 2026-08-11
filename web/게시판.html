@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>게시판</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>간단한 게시판</h1>
+        </header>
+
+        <main>
+            <form id="postForm" class="post-form">
+                <input type="text" id="title" placeholder="제목을 입력하세요" required>
+                <textarea id="content" rows="4" placeholder="내용을 입력하세요" required></textarea>
+                <div class="form-actions">
+                    <button type="submit">등록</button>
+                </div>
+            </form>
+
+            <section id="posts" class="posts"></section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

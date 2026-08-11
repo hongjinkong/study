@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            반복문과 조건문
+        1. for문 정리
+            - for i in range(0,10,1): 파이썬 버젼
+            - for(let i = 0; i < 10; i++){}
+        */
+        for(let i = 0; i < 10; i++){
+            console.log("출력")
+        };
+        let num =[1,2,3,4];
+        for(let i = 0; i < num.length; i++){
+            console.log(num[i]);
+        };
+
+        //조건문
+        let num2 =9;
+        if(num2 > 10){
+            alert("조건문 실행");
+        }else if(num2 == 10){
+            alert("조건문 실행2");
+        }else{
+            alert("조건문 실행3");
+        };
+
+        //while문 -> break를 넣는게 포인트
+        while(true){
+            break;
+        };
+
+        // JS로 함수 제작하는 방법 2가지
+        function add(num1,num2){
+            console.log(num1 + num2);
+        };
+        add(100,200);
+
+        //ECAM6에 등장한 화살표
+        const minus = (num1, num2) => {
+            console.log(num1 - num2);
+        }
+        minus(100,50);
+    </script>
+</body>
+</html>

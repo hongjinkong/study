@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <!--
+        html 파일안에 css언어 작성하고 싶음 -> html은 태그로만 소통
+    -->
+    <style>
+        /*css를 작성하기 위한 공간
+        목표1 : table태그의 테두리를 설정 -> 선의 두께, 선의종류
+        목표2 : 첫번째 줄의 배경색을 노란색으로 부여 (id를활용)
+        목표3 : 첫번째 줄의 th의 글자색을 흰색으로 부여 (자식선택자 활용)
+        */
+        table, tr, td, th{
+            border : 1px solid blue;
+        }
+        #first{
+            background-color : yellow;
+        }
+        #first > th{
+            color : white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        테이블 태그
+        - table 태그 -> 표를 만들겟다 선언하는 태그
+        - tr 태그 -> 표의 행을 만들겟다 선언하는 태그
+        - td 태그 -> 표의 열을 만들겟다 선언하는 태그
+        - th 태그 -> 표의 제목을 만들겟다 선언하는 태그
+        - 사용처 : 게시판을 작성할때 활용
+        - 포인트 : table -> tr -> th -> td -> 디자인
+        -->
+        <table border="1px solid black">
+            <tr id="first" >
+                <th>이름</th>
+                <th>성별</th>
+                <th>주소</th>
+            </tr>
+            <tr>
+                <td>홍진성</td>
+                <td>남자</td>
+                <td>광주</td>
+            </tr>
+            <tr>
+                <td>임보미</td>
+                <td>남자</td>
+                <td>광주</td>
+            </tr>
+        </table>
+</body>
+</html>
