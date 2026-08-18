@@ -3,7 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 한글 폰트 설정 (matplotlib 차트 글자 깨짐 방지)
-plt.rcParams['font.family'] = 'Malgun Gothic'
+# 맥은 AppleGothic, 윈도우는 Malgun Gothic -> 먼저 찾은 폰트를 사용
+plt.rcParams['font.family'] = ['AppleGothic', 'Malgun Gothic', 'NanumGothic']
 plt.rcParams['axes.unicode_minus'] = False
 
 # 제목, 설명

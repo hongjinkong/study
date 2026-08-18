@@ -10,7 +10,7 @@ edge [fontname="helvetica"] ;
 2 -> 3 ;
 4 [label="gini = 0.0\nsamples = 134\nvalue = [134, 0]\nclass = 독성", fillcolor="#e58139"] ;
 2 -> 4 ;
-5 [label="odor_m <= 0.5\ngini = 0.127\nsamples = 382\nvalue = [356, 26]\nclass = 독성", fillcolor="#e78a47"] ;
+5 [label="stalk-surface-above-ring_k <= 0.5\ngini = 0.127\nsamples = 382\nvalue = [356, 26]\nclass = 독성", fillcolor="#e78a47"] ;
 1 -> 5 ;
 6 [label="gini = 0.0\nsamples = 356\nvalue = [356, 0]\nclass = 독성", fillcolor="#e58139"] ;
 5 -> 6 ;
