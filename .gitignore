@@ -55,3 +55,8 @@ Thumbs.db
 
 # ===== 임시(중첩 git 백업) — 확인 후 삭제하세요 =====
 _to_delete/
+
+# ===== API 키 =====
+key/
+*_key.txt
+.env

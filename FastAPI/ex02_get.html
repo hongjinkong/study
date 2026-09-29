@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI GET 응용</title>
+</head>
+<body>
+    <a href="http://127.0.0.1:8000/">기본 주소</a>
+
+    <h3>학생 정보 조회</h3>
+    <ul>
+        <li>
+            <a href="http://127.0.0.1:8000/student/1">1번 학생 조회</a>
+        </li>
+        <li>
+            <a href="http://127.0.0.1:8000/students/2">2번 학생 조회</a>
+        </li>
+        <li>
+            <a href="http://127.0.0.1:8000/students/3">3번 학생 조회</a>
+        </li>
+    </ul>
+
+    <h2>쿼리 파라미터(카테고리에 대한 가격)</h2>
+    <p>URL 뒤 ?key=value 형태로 값을 전달하는 방식</p>
+    <form action="http://127.0.0.1:8000/products" method="get">
+        <div>
+            <label for="category">카테고리</label>
+            <input type="text" id="category" name="category" placeholder="예: 컴퓨터">
+        </div>
+        <br>
+        <div>
+            <label for="level">가격</label>
+            <input type="number" id="price" name="price" placeholder="예: 50000">
+        </div>
+        <br>
+        <button type="submit">검색요청</button>
+    </form>
+    <h2>쿼리 파라미터(과목에 대한 복습시간)</h2>
+    <form action="http://127.0.0.1:8000/recommend" method="get">
+        <div>
+            <label for="subject">과목명</label>
+            <input type="text" id="subject" name="subject" placeholder="예: python">
+        </div>
+        <br>
+        <div>
+            <label for="time">학습 시간</label>
+            <input type="number" id="time" name="time" placeholder="예: 30">
+        </div>
+        <br>
+        <button type="submit">추천요청</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI POST 실습</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:8000/hello" method="post">
+        <button type="submit">POST 요청</button>
+    </form>
+
+    <h1>학생등록</h1>
+    <form action="http://127.0.0.1:8000/students" method="post">
+        <label>이름</label>
+        <input type="text" name="name">
+        <label>나이</label>
+        <input type="number" name="age">
+        <button type="submit">학생등록</button>
+    </form>
+</body>
+</html>
