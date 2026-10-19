@@ -18,6 +18,8 @@ AI 에이전트 엔지니어 부트캠프에서 학습한 내용을 정리한 �
 | `컴퓨터비전` | OpenCV, OCR, YOLO 기반 이미지·영상 처리 |
 | `FastAPI` | Python API 서버와 백엔드 개발 |
 | `Lang chain` | LLM과 LangChain을 활용한 AI 애플리케이션 |
+| `nodejs` | Node.js 내장 HTTP 서버, Express, Router, REST API |
+| `n8n` | 자동화 연계를 위한 음성 분류 모델 파인튜닝 실습 |
 | `streamlit` | 데이터·AI 결과를 보여주는 Streamlit 앱 |
 | `reactjs` | JSX부터 컴포넌트, State, 배열 렌더링, 생명주기, 라우팅까지의 React 실습 |
 

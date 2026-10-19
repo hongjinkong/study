@@ -45,6 +45,9 @@ env/
 *.egg-info/
 .pytest_cache/
 
+# ===== Node.js =====
+node_modules/
+
 # ===== 에디터 / 도구 설정 =====
 .vscode/
 .idea/

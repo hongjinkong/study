@@ -48,3 +48,5 @@ VITE_MOVIE_API_KEY=발급받은_API_KEY
 - `Link`와 `useNavigate`의 사용 목적 차이
 - 동적 세그먼트와 쿼리스트링의 차이
 - 클라이언트 State만 사용한 인증 정보는 새로고침하면 초기화된다는 점
+
+[저장소 메인으로 돌아가기](../README.md)
